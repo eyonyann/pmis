@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.lab2"
-    compileSdk = 34
+    namespace = "com.example.lab3"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.lab2"
+        applicationId = "com.example.lab3"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -50,7 +50,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -61,6 +60,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.navigation.compose)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

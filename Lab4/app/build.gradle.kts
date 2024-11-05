@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.lab2"
-    compileSdk = 34
+    namespace = "com.example.lab4"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.lab2"
+        applicationId = "com.example.lab4"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -50,7 +50,7 @@ android {
 }
 
 dependencies {
-
+    implementation("io.coil-kt:coil-compose:2.0.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
