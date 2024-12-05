@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categories">
+        <item>Зеленый чай</item>
+        <item>Черный чай</item>
+        <item>Белый чай</item>
+        <item>Травяной чай</item>
+        <item>Желтый чай</item>
+        <item>Оолонг</item>
+        <item>Пуэр</item>
+        <item>Матча</item>
+        <item>Фруктовый чай</item>
+        <item>Чай с молоком</item>
+    </string-array>
+</resources>
