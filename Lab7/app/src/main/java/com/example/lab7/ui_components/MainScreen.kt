@@ -12,28 +12,31 @@ import androidx.compose.material3.ModalNavigationDrawer
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Modifier
+import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.lab7.MainViewModel
 import com.example.lab7.utils.DrawerEvents
-import com.example.lab7.utils.IdArrayList
 import com.example.lab7.utils.ListItem
 import kotlinx.coroutines.launch
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
-fun MainScreen(context: Context,onClick: (ListItem)->Unit) {
+fun MainScreen(mainViewModel: MainViewModel = hiltViewModel(), onClick: (ListItem)->Unit) {
 
-    var topBarTitle=rememberSaveable{mutableStateOf("Азиатские кошки")}
-    var ind=rememberSaveable{mutableStateOf(0)}
-
+    var topBarTitle=rememberSaveable{mutableStateOf("Зеленый чай")}
     val drawerState = rememberDrawerState(DrawerValue.Closed)
     val scope = rememberCoroutineScope()
-    val mainList= remember{
-        mutableStateOf(getListItemsByIndex(ind.value,context))
+    val mainlist=mainViewModel.mainList
+    LaunchedEffect(Unit) {
+        mainViewModel.getAllItemsByCategory(topBarTitle.value)
     }
+
+
     ModalNavigationDrawer(
         drawerState = drawerState,
         drawerContent = {
@@ -41,10 +44,8 @@ fun MainScreen(context: Context,onClick: (ListItem)->Unit) {
                 DrawerMenu(){ event ->
                     when(event) {
                         is DrawerEvents.OnItemClick -> {
-                            ind.value=event.index
                             topBarTitle.value=event.title
-                            mainList.value=
-                                getListItemsByIndex(ind.value,context)
+                            mainViewModel.getAllItemsByCategory(event.title)
                         }
                     }
                     scope.launch {
@@ -57,12 +58,15 @@ fun MainScreen(context: Context,onClick: (ListItem)->Unit) {
             Scaffold(
                 topBar = {
                     MainTopBar(title = topBarTitle.value, drawerState =
-                    drawerState)
+                    drawerState) {
+                        topBarTitle.value = "Избранные"
+                        mainViewModel.getFavorites()
+                    }
                 }
             ) {innerPadding ->
                 LazyColumn(modifier=
                 Modifier.padding(innerPadding).fillMaxSize()){
-                    items(mainList.value) {item ->
+                    items(mainlist.value) {item ->
                         MainListItem(item = item){listItem -> onClick(listItem)
                         }
                     }
@@ -70,22 +74,5 @@ fun MainScreen(context: Context,onClick: (ListItem)->Unit) {
             }
         }
     )
-}
-
-
-private fun getListItemsByIndex(index: Int, context: Context): List<ListItem>{
-    val list = ArrayList<ListItem>()
-    val arrayList = context.resources.getStringArray(IdArrayList.listId[index])
-    arrayList.forEach { item ->
-        val itemArray = item.split("|")
-        list.add(
-            ListItem(
-                itemArray[0],
-                itemArray[1],
-                itemArray[2]
-            )
-        )
-    }
-    return list
 }
 

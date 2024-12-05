@@ -15,7 +15,7 @@ import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MainTopBar(title: String,drawerState: DrawerState) {
+fun MainTopBar(title: String,drawerState: DrawerState, onFavClick: () -> Unit) {
     val coroutine= rememberCoroutineScope()
     TopAppBar(
         title = {
@@ -34,7 +34,7 @@ fun MainTopBar(title: String,drawerState: DrawerState) {
         },
         actions = {
             IconButton(
-                onClick = { }
+                onClick = { onFavClick() }
             ) {
                 Icon(
                     imageVector = Icons.Default.Favorite,
