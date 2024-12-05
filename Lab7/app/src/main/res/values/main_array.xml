@@ -1,54 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="green_tea">
-        <item>Сенча|green_tea|Описание зеленого чая Сенча</item>
-        <item>Матча|matcha|Описание зеленого чая Матча</item>
-        <item>Ганпаудер|gunpowder|Описание зеленого чая Ганпаудер</item>
-        <item>Лунцзин|longjing|Описание зеленого чая Лунцзин</item>
+        <item>Сенча|green_tea.jpg|green_tea.html</item>
+        <item>Матча|matcha.jpg|matcha.html</item>
+        <item>Ганпаудер|gunpowder.jpg|gunpowder.html</item>
+        <item>Лунцзин|longjing.jpg|longjing.html</item>
     </string-array>
     <string-array name="black_tea">
-        <item>Ассам|black_assam|Описание черного чая Ассам</item>
-        <item>Дарджилинг|black_darjeeling|Описание черного чая Дарджилинг</item>
-        <item>Кимун|keemun|Описание черного чая Кимун</item>
-        <item>Цейлонский|ceylon|Описание черного чая Цейлонский</item>
+        <item>Ассам|black_assam.jpg|black_assam.html</item>
+        <item>Дарджилинг|black_darjeeling.jpg|black_darjeeling.html</item>
+        <item>Кимун|keemun.jpg|keemun.html</item>
+        <item>Цейлонский|ceylon.jpg|ceylon.html</item>
     </string-array>
     <string-array name="white_tea">
-        <item>Белая пион|white_peony|Описание белого чая Белая пион</item>
-        <item>Серебряные иглы|silver_needles|Описание белого чая Серебряные иглы</item>
-        <item>Шоу Мэй|shou_mei|Описание белого чая Шоу Мэй</item>
+        <item>Белая пион|white_peony.jpg|white_peony.html</item>
+        <item>Серебряные иглы|silver_needles.jpg|silver_needles.html</item>
+        <item>Шоу Мэй|shou_mei.jpg|shou_mei.html</item>
     </string-array>
     <string-array name="herbal_tea">
-        <item>Мята|mint|Описание травяного чая Мята</item>
-        <item>Ромашка|chamomile|Описание травяного чая Ромашка</item>
-        <item>Имбирный чай|ginger_tea|Описание травяного чая Имбирный чай</item>
-        <item>Каркаде|hibiscus|Описание травяного чая Каркаде</item>
+        <item>Мята|mint.jpg|mint.html</item>
+        <item>Ромашка|chamomile.jpg|chamomile.html</item>
+        <item>Имбирный чай|ginger_tea.jpg|ginger_tea.html</item>
+        <item>Каркаде|hibiscus.jpg|hibiscus.html</item>
     </string-array>
     <string-array name="yellow_tea">
-        <item>Хо Шань Хуан Я|huoshan_huangya|Описание желтого чая Хо Шань Хуан Я</item>
-        <item>Цзюнь Шань Инь Чжень|junshan_yinzhen|Описание желтого чая Цзюнь Шань Инь Чжень</item>
+        <item>Хо Шань Хуан Я|huoshan_huangya.jpg|huoshan_huangya.html</item>
+        <item>Цзюнь Шань Инь Чжень|junshan_yinzhen.jpg|junshan_yinzhen.html</item>
     </string-array>
     <string-array name="oolong">
-        <item>Те Гуаньинь|tieguanyin|Описание оолонга Те Гуаньинь</item>
-        <item>Дахунпао|dahongpao|Описание оолонга Дахунпао</item>
-        <item>Найсян Оолонг|milky_oolong|Описание оолонга Найсян Оолонг</item>
+        <item>Те Гуаньинь|tieguanyin.jpg|tieguanyin.html</item>
+        <item>Дахунпао|dahongpao.jpg|dahongpao.html</item>
+        <item>Найсян Оолонг|milky_oolong.jpg|milky_oolong.html</item>
     </string-array>
     <string-array name="puer">
-        <item>Шу Пуэр|shu_puer|Описание пуэра Шу Пуэр</item>
-        <item>Шэн Пуэр|sheng_puer|Описание пуэра Шэн Пуэр</item>
+        <item>Шу Пуэр|shu_puer.jpg|shu_puer.html</item>
+        <item>Шэн Пуэр|sheng_puer.jpg|sheng_puer.html</item>
     </string-array>
     <string-array name="matcha">
-        <item>Классический Матча|classic_matcha|Описание матча Классический Матча</item>
-        <item>Матча Латте|matcha_latte|Описание матча Матча Латте</item>
+        <item>Классический Матча|classic_matcha.jpg|classic_matcha.html</item>
+        <item>Матча Латте|matcha_latte.jpg|matcha_latte.html</item>
     </string-array>
     <string-array name="fruit_tea">
-        <item>Цитрусовый|citrus_tea|Описание фруктового чая Цитрусовый</item>
-        <item>Ягодный|berry_tea|Описание фруктового чая Ягодный</item>
-        <item>Манговый|mango_tea|Описание фруктового чая Манговый</item>
+        <item>Цитрусовый|citrus_tea.jpg|citrus_tea.html</item>
+        <item>Ягодный|berry_tea.jpg|berry_tea.html</item>
+        <item>Манговый|mango_tea.jpg|mango_tea.html</item>
     </string-array>
     <string-array name="milk_tea">
-        <item>Баббл Ти|bubble_tea|Описание чая с молоком Баббл Ти</item>
-        <item>Молочный улун|milk_oolong|Описание чая с молоком Молочный улун</item>
-        <item>Индийский чай|masala_tea|Описание чая с молоком Индийский чай</item>
+        <item>Баббл Ти|bubble_tea.jpg|bubble_tea.html</item>
+        <item>Молочный улун|milk_oolong.jpg|milk_oolong.html</item>
+        <item>Индийский чай|masala_tea.jpg|masala_tea.html</item>
     </string-array>
-
 </resources>

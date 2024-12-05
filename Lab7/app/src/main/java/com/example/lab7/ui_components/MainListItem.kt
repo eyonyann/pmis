@@ -4,6 +4,7 @@ import android.graphics.BitmapFactory
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -27,11 +28,14 @@ import com.example.lab7.ui.theme.MyGreen
 import com.example.lab7.utils.ListItem
 
 @Composable
-fun MainListItem(item: ListItem) {
+fun MainListItem(item: ListItem, onClick: (ListItem)->Unit ) {
     Card(modifier = Modifier
         .fillMaxWidth()
         .height(300.dp)
-        .padding(5.dp),
+        .padding(5.dp)
+        .clickable {
+            onClick(item)
+        },
         shape = RoundedCornerShape(10.dp),
         border = BorderStroke(1.dp, MyGreen)
     ) {
@@ -61,7 +65,7 @@ fun AssetImage(imageName:String,contentDescription: String, modifier: Modifier
 ){
     val context= LocalContext.current
     val assetManager=context.assets
-    val inputStream = assetManager.open("$imageName.jpg")
+    val inputStream = assetManager.open(imageName)
     val bitMap= BitmapFactory.decodeStream(inputStream)
     Image(bitmap = bitMap.asImageBitmap(),
         contentDescription =contentDescription,
