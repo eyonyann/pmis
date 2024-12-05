@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="green_tea">
+        <item>Сенча|green_tea|Описание зеленого чая Сенча</item>
+        <item>Матча|matcha|Описание зеленого чая Матча</item>
+        <item>Ганпаудер|gunpowder|Описание зеленого чая Ганпаудер</item>
+        <item>Лунцзин|longjing|Описание зеленого чая Лунцзин</item>
+    </string-array>
+    <string-array name="black_tea">
+        <item>Ассам|black_assam|Описание черного чая Ассам</item>
+        <item>Дарджилинг|black_darjeeling|Описание черного чая Дарджилинг</item>
+        <item>Кимун|keemun|Описание черного чая Кимун</item>
+        <item>Цейлонский|ceylon|Описание черного чая Цейлонский</item>
+    </string-array>
+    <string-array name="white_tea">
+        <item>Белая пион|white_peony|Описание белого чая Белая пион</item>
+        <item>Серебряные иглы|silver_needles|Описание белого чая Серебряные иглы</item>
+        <item>Шоу Мэй|shou_mei|Описание белого чая Шоу Мэй</item>
+    </string-array>
+    <string-array name="herbal_tea">
+        <item>Мята|mint|Описание травяного чая Мята</item>
+        <item>Ромашка|chamomile|Описание травяного чая Ромашка</item>
+        <item>Имбирный чай|ginger_tea|Описание травяного чая Имбирный чай</item>
+        <item>Каркаде|hibiscus|Описание травяного чая Каркаде</item>
+    </string-array>
+    <string-array name="yellow_tea">
+        <item>Хо Шань Хуан Я|huoshan_huangya|Описание желтого чая Хо Шань Хуан Я</item>
+        <item>Цзюнь Шань Инь Чжень|junshan_yinzhen|Описание желтого чая Цзюнь Шань Инь Чжень</item>
+    </string-array>
+    <string-array name="oolong">
+        <item>Те Гуаньинь|tieguanyin|Описание оолонга Те Гуаньинь</item>
+        <item>Дахунпао|dahongpao|Описание оолонга Дахунпао</item>
+        <item>Найсян Оолонг|milky_oolong|Описание оолонга Найсян Оолонг</item>
+    </string-array>
+    <string-array name="puer">
+        <item>Шу Пуэр|shu_puer|Описание пуэра Шу Пуэр</item>
+        <item>Шэн Пуэр|sheng_puer|Описание пуэра Шэн Пуэр</item>
+    </string-array>
+    <string-array name="matcha">
+        <item>Классический Матча|classic_matcha|Описание матча Классический Матча</item>
+        <item>Матча Латте|matcha_latte|Описание матча Матча Латте</item>
+    </string-array>
+    <string-array name="fruit_tea">
+        <item>Цитрусовый|citrus_tea|Описание фруктового чая Цитрусовый</item>
+        <item>Ягодный|berry_tea|Описание фруктового чая Ягодный</item>
+        <item>Манговый|mango_tea|Описание фруктового чая Манговый</item>
+    </string-array>
+    <string-array name="milk_tea">
+        <item>Баббл Ти|bubble_tea|Описание чая с молоком Баббл Ти</item>
+        <item>Молочный улун|milk_oolong|Описание чая с молоком Молочный улун</item>
+        <item>Индийский чай|masala_tea|Описание чая с молоком Индийский чай</item>
+    </string-array>
+
+</resources>
