@@ -2,15 +2,17 @@ package com.example.lab7.utils
 
 import androidx.compose.runtime.saveable.listSaver
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity(tableName = "main")
 data class ListItem(
-    val id: Int,
+    @PrimaryKey(autoGenerate = true)
+    val id:Int?=null,
     val title: String,
     val imageName: String,
     val htmlName: String,
     val isfav: Boolean,
-    val category: String
+    val category:String
 )
 
 val ItemSaver = listSaver<ListItem, Any>(

@@ -239,7 +239,7 @@ fun getTeaItemsByCategory(category: String, context: Context): List<TeaItem> {
             TeaItem("Шу Пуэр", "shu_puer", "Описание пуэра Шу Пуэр"),
             TeaItem("Шэн Пуэр", "sheng_puer", "Описание пуэра Шэн Пуэр")
         ),
-        "Матча" to listOf(
+        "Матча" to listOf(спс
             TeaItem("Классический Матча", "classic_matcha", "Описание матча Классический Матча"),
             TeaItem("Матча Латте", "matcha_latte", "Описание матча Матча Латте")
         ),

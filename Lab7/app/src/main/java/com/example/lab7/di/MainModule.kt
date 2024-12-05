@@ -3,13 +3,15 @@ package com.example.lab7.di
 import android.app.Application
 import androidx.room.Room
 import com.example.lab7.db.MainDb
+import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
-@androidx.test.espresso.core.internal.deps.dagger.Module
+@Module
 @InstallIn(SingletonComponent::class)
 object MainModule {
-    @androidx.test.espresso.core.internal.deps.dagger.Provides
+    @Provides
     @Singleton
     fun provideMainDb(App:Application): MainDb {
         return Room.databaseBuilder(
