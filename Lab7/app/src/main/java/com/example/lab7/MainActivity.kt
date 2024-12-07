@@ -46,7 +46,6 @@ class MainActivity : ComponentActivity() {
                         }
                     }
                     composable(Routes.INFO_SCREEN.route) {
-                        // вызов Infoscreen
                         InfoScreen(item = item.value!!)
                     }
                 }
